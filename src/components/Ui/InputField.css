@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-top: 1rem;
+}
+
+.input {
+  outline: none;
+  display: flex;
+  flex: 1 0 auto;
+  width: 100%;
+  background: #f9f9f9;
+  border: none;
+  border-bottom: solid 1px #d8e2e7;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  color: #004062;
+  transition: border-bottom 0.2s ease-in-out;
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-bottom-color: #007bbe;
+  }
+
+  &.input-error {
+    border-bottom-color: #ec535b;
+  }
+
+  &.input-valid {
+    border-bottom-color: #01cdbe;
+  }
+}
+
+.symbol {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 6px;
+  height: 24px;
+  margin-left: 10px;
+  border-radius: 30px;
+  background: #ec535b;
+}
